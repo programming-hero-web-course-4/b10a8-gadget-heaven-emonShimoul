@@ -19,7 +19,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="max-w-[1065px]  absolute top-120 left-55">
+      <div className="max-w-[1065px] absolute top-120 left-55">
         <div className="border-2 rounded-xl border-gray-200 bg-[#FFFFFF4D]">
           <div className="p-4">
             <img
