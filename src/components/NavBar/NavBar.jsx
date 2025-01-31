@@ -50,8 +50,8 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end flex gap-4">
-          <IoCartOutline className="text-2xl" />
-          <FaRegHeart className="text-xl" />
+          <IoCartOutline className="text-4xl bg-white text-black p-2 rounded-4xl cursor-pointer" />
+          <FaRegHeart className="text-4xl bg-white text-black p-2 rounded-4xl cursor-pointer" />
         </div>
       </div>
     </div>
