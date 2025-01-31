@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { IoCartOutline } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
 
 const NavBar = () => {
   const links = (
@@ -47,8 +49,9 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end flex gap-4">
+          <IoCartOutline className="text-2xl" />
+          <FaRegHeart className="text-xl" />
         </div>
       </div>
     </div>
