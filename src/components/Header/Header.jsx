@@ -3,7 +3,7 @@ import BannerImage from "../../assets/banner.jpg";
 
 const Header = () => {
   return (
-    <div className="bg-[#9538E2] rounded-2xl">
+    <div className="bg-[#9538E2] rounded-2xl relative">
       <NavBar></NavBar>
       <div className="text-center text-white flex flex-col gap-8 pt-16 pb-56">
         <h2 className="text-6xl font-bold w-4/5 mx-auto leading-18">
@@ -19,8 +19,12 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="max-w-[1065px] absolute">
-        <img src={BannerImage} alt="" />
+      <div className="max-w-[1065px] absolute top-120 left-95">
+        <div className="w-3/4 border-2 rounded-xl border-gray-200 bg-[#FFFFFF4D]">
+          <div className="p-4">
+            <img src={BannerImage} alt="" className="rounded-xl" />
+          </div>
+        </div>
       </div>
     </div>
   );
