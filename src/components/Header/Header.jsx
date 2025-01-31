@@ -19,10 +19,14 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="max-w-[1065px] absolute top-120 left-95">
-        <div className="w-3/4 border-2 rounded-xl border-gray-200 bg-[#FFFFFF4D]">
+      <div className="max-w-[1065px]  absolute top-120 left-55">
+        <div className="border-2 rounded-xl border-gray-200 bg-[#FFFFFF4D]">
           <div className="p-4">
-            <img src={BannerImage} alt="" className="rounded-xl" />
+            <img
+              src={BannerImage}
+              alt=""
+              className="rounded-xl w-[1030px] h-[565px]"
+            />
           </div>
         </div>
       </div>
