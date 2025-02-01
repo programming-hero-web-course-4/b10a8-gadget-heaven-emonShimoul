@@ -1,149 +1,205 @@
 [
   {
-    "product_id": "001",
-    "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/images/dell-xps13.jpg",
-    "category": "Laptop",
+    "product_id": "P001",
+    "product_title": "Apple iPhone 15 Pro Max",
+    "product_image": "https://via.placeholder.com/300x300?text=Apple+iPhone+15+Pro+Max",
+    "category": "Smartphones",
     "price": 1299.99,
-    "description": "13.4-inch FHD display, lightweight premium build.",
-    "specification": {
-      "processor": "Intel Core i7-1165G7",
-      "RAM": "16GB LPDDR4x",
-      "storage": "512GB SSD",
-      "graphics": "Intel Iris Xe Graphics",
-      "OS": "Windows 11"
-    },
-    "availability": "In Stock",
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
     "rating": 4.8
   },
   {
-    "product_id": "002",
-    "product_title": "Apple iPhone 14 Pro",
-    "product_image": "https://example.com/images/iphone14pro.jpg",
-    "category": "Mobile",
-    "price": 999.99,
-    "description": "6.1-inch Super Retina XDR display with Dynamic Island.",
-    "specification": {
-      "processor": "A16 Bionic",
-      "RAM": "6GB",
-      "storage": "128GB",
-      "camera": "48 MP + 12 MP + 12 MP",
-      "battery": "3200 mAh"
-    },
-    "availability": "Pre-Order",
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://via.placeholder.com/300x300?text=Samsung+Galaxy+S23+Ultra",
+    "category": "Smartphones",
+    "price": 1199.99,
+    "description": "The best of Samsung with a stunning display and a 200 MP camera.",
+    "specification": [
+      "6.8-inch QHD+ AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "200 MP main camera",
+      "5000 mAh battery",
+      "12GB RAM, 256GB storage"
+    ],
+    "availability": true,
     "rating": 4.9
   },
   {
-    "product_id": "003",
-    "product_title": "Samsung Galaxy Tab S8",
-    "product_image": "https://example.com/images/galaxy-tabs8.jpg",
-    "category": "Tablet",
-    "price": 699.99,
-    "description": "11-inch LTPS display, slim and lightweight.",
-    "specification": {
-      "processor": "Snapdragon 8 Gen 1",
-      "RAM": "8GB",
-      "storage": "256GB",
-      "battery": "8000 mAh"
-    },
-    "availability": "In Stock",
-    "rating": 4.6
+    "product_id": "P003",
+    "product_title": "Apple MacBook Air M2",
+    "product_image": "https://via.placeholder.com/300x300?text=Apple+MacBook+Air+M2",
+    "category": "Laptops",
+    "price": 1199.99,
+    "description": "Lightweight powerhouse with Apple's M2 chip.",
+    "specification": [
+      "13.6-inch Retina display",
+      "Apple M2 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "macOS Ventura"
+    ],
+    "availability": true,
+    "rating": 4.8
   },
   {
-    "product_id": "004",
+    "product_id": "P004",
+    "product_title": "Dell XPS 13 Plus",
+    "product_image": "https://via.placeholder.com/300x300?text=Dell+XPS+13+Plus",
+    "category": "Laptops",
+    "price": 1499.99,
+    "description": "Ultra-premium design with high-performance specs.",
+    "specification": [
+      "13.4-inch FHD+ display",
+      "Intel Core i7-1260P",
+      "16GB LPDDR5 RAM",
+      "512GB SSD",
+      "Windows 11 Pro"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P005",
     "product_title": "Sony WH-1000XM5",
-    "product_image": "https://example.com/images/sony-wh1000xm5.jpg",
+    "product_image": "https://via.placeholder.com/300x300?text=Sony+WH-1000XM5",
     "category": "Headphones",
     "price": 399.99,
-    "description": "Industry-leading noise cancellation and 30-hour battery life.",
-    "specification": {
-      "type": "Over-Ear",
-      "battery_life": "30 hours",
-      "connectivity": "Bluetooth 5.2",
-      "features": ["Noise Cancellation", "Quick Charge"]
-    },
-    "availability": "In Stock",
+    "description": "Industry-leading noise cancellation headphones.",
+    "specification": [
+      "Over-ear design",
+      "Bluetooth 5.2 connectivity",
+      "30 hours of battery life",
+      "Noise cancellation",
+      "Quick charge feature"
+    ],
+    "availability": true,
     "rating": 4.7
   },
   {
-    "product_id": "005",
-    "product_title": "Apple MacBook Air M2",
-    "product_image": "https://example.com/images/macbook-air-m2.jpg",
-    "category": "Laptop",
-    "price": 1199.99,
-    "description": "13.6-inch Retina display, powered by M2 chip.",
-    "specification": {
-      "processor": "Apple M2",
-      "RAM": "8GB",
-      "storage": "256GB SSD",
-      "OS": "macOS Ventura"
-    },
-    "availability": "In Stock",
-    "rating": 4.9
-  },
-  {
-    "product_id": "006",
-    "product_title": "Samsung Galaxy S23 Ultra",
-    "product_image": "https://example.com/images/galaxy-s23-ultra.jpg",
-    "category": "Mobile",
-    "price": 1199.99,
-    "description": "6.8-inch QHD+ AMOLED display with 200 MP camera.",
-    "specification": {
-      "processor": "Snapdragon 8 Gen 2",
-      "RAM": "12GB",
-      "storage": "256GB",
-      "battery": "5000 mAh"
-    },
-    "availability": "Limited Stock",
+    "product_id": "P006",
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://via.placeholder.com/300x300?text=Apple+Watch+Series+8",
+    "category": "Smartwatches",
+    "price": 499.99,
+    "description": "Track your health and stay connected.",
+    "specification": [
+      "1.9-inch OLED always-on Retina display",
+      "Heart rate monitor",
+      "ECG and blood oxygen sensor",
+      "18-hour battery life",
+      "Bluetooth and Wi-Fi connectivity"
+    ],
+    "availability": true,
     "rating": 4.8
   },
   {
-    "product_id": "007",
-    "product_title": "Apple Watch Series 8",
-    "product_image": "https://example.com/images/apple-watch8.jpg",
-    "category": "Smartwatch",
-    "price": 499.99,
-    "description": "Always-on Retina display, health tracking features.",
-    "specification": {
-      "display": "1.9-inch OLED",
-      "battery_life": "18 hours",
-      "connectivity": "Bluetooth, Wi-Fi",
-      "features": ["Heart Rate Monitor", "ECG", "Blood Oxygen Sensor"]
-    },
-    "availability": "In Stock",
-    "rating": 4.7
+    "product_id": "P007",
+    "product_title": "ASUS ROG Strix G16",
+    "product_image": "https://via.placeholder.com/300x300?text=ASUS+ROG+Strix+G16",
+    "category": "Laptops",
+    "price": 1799.99,
+    "description": "A powerful gaming laptop built for performance.",
+    "specification": [
+      "16-inch WQXGA display",
+      "Intel Core i9-13980HX",
+      "32GB DDR5 RAM",
+      "1TB SSD",
+      "NVIDIA GeForce RTX 4080"
+    ],
+    "availability": true,
+    "rating": 4.9
   },
   {
-    "product_id": "008",
+    "product_id": "P008",
     "product_title": "Bose SoundLink Flex",
-    "product_image": "https://example.com/images/bose-soundlink-flex.jpg",
-    "category": "Speaker",
+    "product_image": "https://via.placeholder.com/300x300?text=Bose+SoundLink+Flex",
+    "category": "Speakers",
     "price": 149.99,
     "description": "Portable Bluetooth speaker with impressive sound quality.",
-    "specification": {
-      "type": "Portable",
-      "battery_life": "12 hours",
-      "connectivity": "Bluetooth",
-      "waterproof": true
-    },
-    "availability": "In Stock",
+    "specification": [
+      "Portable design",
+      "12 hours of battery life",
+      "Bluetooth connectivity",
+      "Waterproof and dustproof"
+    ],
+    "availability": true,
     "rating": 4.5
   },
   {
-    "product_id": "009",
-    "product_title": "ASUS ROG Strix G16",
-    "product_image": "https://example.com/images/asus-rog-g16.jpg",
-    "category": "Laptop",
-    "price": 1799.99,
-    "description": "16-inch WQXGA display, powerful gaming performance.",
-    "specification": {
-      "processor": "Intel Core i9-13980HX",
-      "RAM": "32GB DDR5",
-      "storage": "1TB SSD",
-      "graphics": "NVIDIA GeForce RTX 4080",
-      "OS": "Windows 11"
-    },
-    "availability": "In Stock",
-    "rating": 4.9
+    "product_id": "P009",
+    "product_title": "Samsung Galaxy Tab S9",
+    "product_image": "https://via.placeholder.com/300x300?text=Samsung+Galaxy+Tab+S9",
+    "category": "Tablets",
+    "price": 899.99,
+    "description": "High-performance Android tablet with stunning display.",
+    "specification": [
+      "11-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 2",
+      "8GB RAM, 256GB storage",
+      "S Pen included",
+      "8000 mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P010",
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://via.placeholder.com/300x300?text=Google+Pixel+8+Pro",
+    "category": "Smartphones",
+    "price": 999.99,
+    "description": "Flagship smartphone with exceptional camera quality.",
+    "specification": [
+      "6.7-inch OLED display",
+      "Google Tensor G3 chip",
+      "50 MP primary camera",
+      "12GB RAM, 128GB storage",
+      "5000 mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P011",
+    "product_title": "Amazon Kindle Paperwhite",
+    "product_image": "https://via.placeholder.com/300x300?text=Amazon+Kindle+Paperwhite",
+    "category": "E-Readers",
+    "price": 139.99,
+    "description": "A lightweight e-reader with a glare-free display.",
+    "specification": [
+      "6.8-inch glare-free display",
+      "Adjustable warm light",
+      "8GB storage",
+      "Weeks of battery life",
+      "Waterproof design"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P012",
+    "product_title": "Fitbit Charge 5",
+    "product_image": "https://via.placeholder.com/300x300?text=Fitbit+Charge+5",
+    "category": "Fitness Trackers",
+    "price": 179.99,
+    "description": "Advanced fitness tracker with health insights.",
+    "specification": [
+      "AMOLED color display",
+      "Heart rate and sleep monitoring",
+      "Built-in GPS",
+      "Up to 7 days battery life",
+      "Stress management tools"
+    ],
+    "availability": true,
+    "rating": 4.5
   }
 ]
