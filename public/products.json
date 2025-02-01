@@ -1,0 +1,149 @@
+[
+  {
+    "product_id": "001",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://example.com/images/dell-xps13.jpg",
+    "category": "Laptop",
+    "price": 1299.99,
+    "description": "13.4-inch FHD display, lightweight premium build.",
+    "specification": {
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB LPDDR4x",
+      "storage": "512GB SSD",
+      "graphics": "Intel Iris Xe Graphics",
+      "OS": "Windows 11"
+    },
+    "availability": "In Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "002",
+    "product_title": "Apple iPhone 14 Pro",
+    "product_image": "https://example.com/images/iphone14pro.jpg",
+    "category": "Mobile",
+    "price": 999.99,
+    "description": "6.1-inch Super Retina XDR display with Dynamic Island.",
+    "specification": {
+      "processor": "A16 Bionic",
+      "RAM": "6GB",
+      "storage": "128GB",
+      "camera": "48 MP + 12 MP + 12 MP",
+      "battery": "3200 mAh"
+    },
+    "availability": "Pre-Order",
+    "rating": 4.9
+  },
+  {
+    "product_id": "003",
+    "product_title": "Samsung Galaxy Tab S8",
+    "product_image": "https://example.com/images/galaxy-tabs8.jpg",
+    "category": "Tablet",
+    "price": 699.99,
+    "description": "11-inch LTPS display, slim and lightweight.",
+    "specification": {
+      "processor": "Snapdragon 8 Gen 1",
+      "RAM": "8GB",
+      "storage": "256GB",
+      "battery": "8000 mAh"
+    },
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "004",
+    "product_title": "Sony WH-1000XM5",
+    "product_image": "https://example.com/images/sony-wh1000xm5.jpg",
+    "category": "Headphones",
+    "price": 399.99,
+    "description": "Industry-leading noise cancellation and 30-hour battery life.",
+    "specification": {
+      "type": "Over-Ear",
+      "battery_life": "30 hours",
+      "connectivity": "Bluetooth 5.2",
+      "features": ["Noise Cancellation", "Quick Charge"]
+    },
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "005",
+    "product_title": "Apple MacBook Air M2",
+    "product_image": "https://example.com/images/macbook-air-m2.jpg",
+    "category": "Laptop",
+    "price": 1199.99,
+    "description": "13.6-inch Retina display, powered by M2 chip.",
+    "specification": {
+      "processor": "Apple M2",
+      "RAM": "8GB",
+      "storage": "256GB SSD",
+      "OS": "macOS Ventura"
+    },
+    "availability": "In Stock",
+    "rating": 4.9
+  },
+  {
+    "product_id": "006",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://example.com/images/galaxy-s23-ultra.jpg",
+    "category": "Mobile",
+    "price": 1199.99,
+    "description": "6.8-inch QHD+ AMOLED display with 200 MP camera.",
+    "specification": {
+      "processor": "Snapdragon 8 Gen 2",
+      "RAM": "12GB",
+      "storage": "256GB",
+      "battery": "5000 mAh"
+    },
+    "availability": "Limited Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "007",
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://example.com/images/apple-watch8.jpg",
+    "category": "Smartwatch",
+    "price": 499.99,
+    "description": "Always-on Retina display, health tracking features.",
+    "specification": {
+      "display": "1.9-inch OLED",
+      "battery_life": "18 hours",
+      "connectivity": "Bluetooth, Wi-Fi",
+      "features": ["Heart Rate Monitor", "ECG", "Blood Oxygen Sensor"]
+    },
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "008",
+    "product_title": "Bose SoundLink Flex",
+    "product_image": "https://example.com/images/bose-soundlink-flex.jpg",
+    "category": "Speaker",
+    "price": 149.99,
+    "description": "Portable Bluetooth speaker with impressive sound quality.",
+    "specification": {
+      "type": "Portable",
+      "battery_life": "12 hours",
+      "connectivity": "Bluetooth",
+      "waterproof": true
+    },
+    "availability": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": "009",
+    "product_title": "ASUS ROG Strix G16",
+    "product_image": "https://example.com/images/asus-rog-g16.jpg",
+    "category": "Laptop",
+    "price": 1799.99,
+    "description": "16-inch WQXGA display, powerful gaming performance.",
+    "specification": {
+      "processor": "Intel Core i9-13980HX",
+      "RAM": "32GB DDR5",
+      "storage": "1TB SSD",
+      "graphics": "NVIDIA GeForce RTX 4080",
+      "OS": "Windows 11"
+    },
+    "availability": "In Stock",
+    "rating": 4.9
+  }
+]
