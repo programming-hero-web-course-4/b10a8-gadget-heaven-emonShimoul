@@ -7,8 +7,8 @@ const Home = () => {
       <h2 className="text-center font-bold text-4xl mb-20">
         Explore Cutting-Edge Gadgets
       </h2>
-      <div className="grid grid-cols-2">
-        <div>
+      <div className="flex">
+        <div className="w-1/5">
           <NavLink>All Products</NavLink>
           <NavLink>Laptops</NavLink>
           <NavLink>Phones</NavLink>
@@ -17,7 +17,7 @@ const Home = () => {
           <NavLink>MacBook</NavLink>
           <NavLink>Iphone</NavLink>
         </div>
-        <div>
+        <div className="4/5">
           <Product></Product>
         </div>
       </div>
