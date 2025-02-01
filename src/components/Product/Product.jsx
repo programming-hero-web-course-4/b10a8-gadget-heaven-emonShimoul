@@ -1,4 +1,4 @@
-const Product = () => {
+const Product = ({ product }) => {
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
       <figure className="px-6 pt-6 pb-4">
@@ -9,7 +9,7 @@ const Product = () => {
         />
       </figure>
       <div className="flex flex-col gap-2 ps-4 pb-8">
-        <h2 className="text-2xl font-semibold">Dell XPS 13</h2>
+        <h2 className="text-2xl font-semibold">{product.product_title}</h2>
         <p className="text-xl text-gray-500 font-semibold">
           price: <span>100</span>K
         </p>
