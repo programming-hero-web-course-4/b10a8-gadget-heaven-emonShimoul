@@ -3,7 +3,7 @@ import BannerImage from "../../assets/banner.jpg";
 
 const Header = () => {
   return (
-    <div className="bg-[#9538E2] rounded-2xl relative">
+    <div className="max-w-[1540px] mx-auto bg-[#9538E2] rounded-2xl relative">
       <NavBar></NavBar>
       <div className="text-center text-white flex flex-col gap-8 pt-16 pb-56">
         <h2 className="text-6xl font-bold w-4/5 mx-auto leading-18">

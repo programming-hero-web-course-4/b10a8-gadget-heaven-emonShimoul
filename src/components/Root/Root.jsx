@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 
 const Root = () => {
   return (
-    <div className="max-w-[1540px] mx-auto">
+    <div className="bg-[#09080F0D]">
       <Header></Header>
       <Outlet></Outlet>
       <Footer></Footer>
