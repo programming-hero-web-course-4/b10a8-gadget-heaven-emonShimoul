@@ -13,13 +13,13 @@ const Home = () => {
   return (
     <>
       <Header></Header>
-      <div className="pt-[500px] pb-12 mb-16 max-w-[1540px] mx-auto">
-        <h2 className="text-center font-bold text-4xl mb-20">
+      <div className="pt-[380px] pb-12 mb-16 max-w-[1200px] mx-auto">
+        <h2 className="text-center font-bold text-4xl mb-12">
           Explore Cutting-Edge Gadgets
         </h2>
         <div className="flex gap-8">
           <div className="w-1/6 flex">
-            <div className="w-full bg-white flex flex-col gap-4 items-center py-8 h-fit font-bold">
+            <div className="w-full bg-white flex flex-col gap-4 items-center py-8 h-fit font-semibold">
               <NavLink
                 to="/"
                 style={navLinkStyles}
@@ -57,7 +57,7 @@ const Home = () => {
               </NavLink>
             </div>
           </div>
-          <div className="5/6 grid lg:grid-cols-3 gap-8">
+          <div className="w-5/6 grid lg:grid-cols-3 gap-2">
             {location.pathname === "/" &&
               allProducts.map((product) => (
                 <Product key={product.product_id} product={product}></Product>
