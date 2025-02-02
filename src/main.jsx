@@ -12,6 +12,7 @@ import Phones from "./components/Phones/Phones";
 import SmartWatches from "./components/SmartWatches/SmartWatches";
 import Accessories from "./components/Accessories/Accessories";
 import Statistics from "./components/Statistics/Statistics";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -68,5 +69,6 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <App /> */}
     <RouterProvider router={router} />
+    <ToastContainer></ToastContainer>
   </StrictMode>
 );

@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
-import { addToCartList } from "../../utility/localstorage";
+import { addToCartList, addToStoredWishList } from "../../utility/localstorage";
 
 const ProductDetails = () => {
   const { product_id } = useParams();
@@ -9,6 +9,10 @@ const ProductDetails = () => {
 
   const handleCart = (id) => {
     addToCartList(id);
+  };
+
+  const handleWishlist = (id) => {
+    addToStoredWishList(id);
   };
 
   //   const id = parseInt(product_id);
@@ -69,7 +73,10 @@ const ProductDetails = () => {
               <span className="text-base">Add to Cart</span>
               <IoCartOutline className="text-xl" />
             </button>
-            <div className="border p-2 rounded-full text-gray-500 cursor-pointer">
+            <div
+              onClick={() => handleWishlist(product_id)}
+              className="border p-2 rounded-full text-gray-500 cursor-pointer"
+            >
               <FaRegHeart />
             </div>
           </div>

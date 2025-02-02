@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { getCartList } from "../../utility/localstorage";
+import { getCartList, getStoredWishList } from "../../utility/localstorage";
 import { useLoaderData } from "react-router-dom";
 
 const Dashboard = () => {
   const allProducts = useLoaderData();
   const [cartList, setCartList] = useState([]);
+  const [wishList, setWishList] = useState([]);
 
   useEffect(() => {
     const storedCartList = getCartList();
@@ -16,6 +17,17 @@ const Dashboard = () => {
       storedCartList.includes(product.product_id)
     );
     setCartList(cartProduct);
+    // console.log(cartList);
+  }, []);
+
+  useEffect(() => {
+    const storedWishList = getStoredWishList();
+    // console.log(storedCartList);
+
+    const wishlistProduct = allProducts.filter((product) =>
+      storedWishList.includes(product.product_id)
+    );
+    setWishList(wishlistProduct);
     // console.log(cartList);
   }, []);
 
@@ -75,6 +87,13 @@ const Dashboard = () => {
                   Purchase
                 </button>
               </div>
+            </div>
+
+            <div className="mt-10">
+              <h3>Added to Wishlist: {wishList.length}</h3>
+              {wishList.map((item) => (
+                <h4 key={item.product_id}>{item.product_title}</h4>
+              ))}
             </div>
           </TabPanel>
         </div>

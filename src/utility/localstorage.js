@@ -23,7 +23,7 @@ const addToCartList = (id) => {
     const cartListStr = JSON.stringify(cartList);
     localStorage.setItem("cart", cartListStr);
     // ideally trigger toast from the component
-    toast("Added to your cart!!");
+    toast("Added to Cart!!");
   }
 };
 
@@ -43,13 +43,13 @@ const addToStoredWishList = (id) => {
 
   if (storedWishList.includes(id)) {
     // console.log(id, "Already exist in the wish list");
-    toast("Already exist in the wish list!!");
+    toast("Already exist in the Wishlist!!");
   } else {
     storedWishList.push(id);
     const storedWishListStr = JSON.stringify(storedWishList);
     localStorage.setItem("wish-list", storedWishListStr);
     // ideally trigger toast from the component
-    toast("Added to your wish list!!");
+    toast("Added to Wishlist!!");
   }
 };
 
