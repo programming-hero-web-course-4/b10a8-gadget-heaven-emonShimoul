@@ -36,18 +36,21 @@ const Home = () => {
               </NavLink>
               <NavLink
                 to="/phones"
+                style={navLinkStyles}
                 className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full"
               >
                 Phones
               </NavLink>
               <NavLink
                 to="/smartwatches"
+                style={navLinkStyles}
                 className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full"
               >
                 SmartWatches
               </NavLink>
               <NavLink
                 to="/accessories"
+                style={navLinkStyles}
                 className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full"
               >
                 Accessories

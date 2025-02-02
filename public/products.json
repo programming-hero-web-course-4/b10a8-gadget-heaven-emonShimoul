@@ -47,7 +47,7 @@
       "256GB SSD",
       "macOS Ventura"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.8
   },
   {
@@ -64,7 +64,7 @@
       "512GB SSD",
       "Windows 11 Pro"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.7
   },
   {
@@ -98,7 +98,7 @@
       "18-hour battery life",
       "Bluetooth and Wi-Fi connectivity"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.8
   },
   {
@@ -131,7 +131,7 @@
       "Bluetooth connectivity",
       "Waterproof and dustproof"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.5
   },
   {

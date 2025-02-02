@@ -11,6 +11,7 @@ import Laptops from "./components/Laptops/Laptops";
 import Phones from "./components/Phones/Phones";
 import SmartWatches from "./components/SmartWatches/SmartWatches";
 import Accessories from "./components/Accessories/Accessories";
+import Statistics from "./components/Statistics/Statistics";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "statistics",
+        element: <Statistics></Statistics>,
       },
     ],
   },

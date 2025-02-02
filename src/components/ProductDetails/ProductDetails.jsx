@@ -1,4 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { FaRegHeart } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
 
 const ProductDetails = () => {
   const { product_id } = useParams();
@@ -54,8 +56,14 @@ const ProductDetails = () => {
           <p>
             <span className="font-bold">Rating:</span> <span>{rating}</span>
           </p>
-          <div>
-            <button className="btn bg-[#9538E2] text-white">Add to Cart</button>
+          <div className="flex gap-4 items-center">
+            <button className="bg-[#9538E2] text-white px-4 py-1 rounded-full cursor-pointer flex gap-1 justify-center items-center">
+              <span className="text-base">Add to Cart</span>
+              <IoCartOutline className="text-xl" />
+            </button>
+            <div className="border p-2 rounded-full text-gray-500 cursor-pointer">
+              <FaRegHeart />
+            </div>
           </div>
         </div>
       </div>
