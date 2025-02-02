@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 const Product = ({ product }) => {
+  // console.log(product);
+
   const { product_id, product_title, product_image } = product;
   return (
     <div className="card bg-base-100 shadow-xl">

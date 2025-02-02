@@ -3,7 +3,7 @@ import BannerImage from "../../assets/banner.jpg";
 const Header = () => {
   return (
     <div className="bg-[#09080F0D]">
-      <div className="max-w-[1200px]  mx-auto bg-[#9538E2] rounded-b-2xl relative">
+      <div className="max-w-[1240px]  mx-auto bg-[#9538E2] rounded-b-2xl relative">
         <div className="text-center text-white flex flex-col gap-8 pt-6 pb-56">
           <h2 className="text-6xl font-bold w-4/5 mx-auto leading-18">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories

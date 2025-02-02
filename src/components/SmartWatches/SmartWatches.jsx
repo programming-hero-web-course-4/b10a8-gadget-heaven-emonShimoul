@@ -1,8 +1,19 @@
+import { useLoaderData } from "react-router-dom";
+import Product from "../Product/Product";
+
 const SmartWatches = () => {
+  const allProducts = useLoaderData();
+
+  const smartwatch = allProducts.filter(
+    (product) => product.category === "smartwatch"
+  );
+
   return (
-    <div>
-      <h2>Smart Watches</h2>
-    </div>
+    <>
+      {smartwatch.map((product) => (
+        <Product key={product.product_id} product={product}></Product>
+      ))}
+    </>
   );
 };
 
