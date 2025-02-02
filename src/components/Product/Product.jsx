@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Product = ({ product }) => {
   // console.log(product);
 
-  const { product_id, product_title, product_image } = product;
+  const { product_id, product_title, product_image, price } = product;
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure className="px-6 pt-6 pb-4">
@@ -14,8 +14,8 @@ const Product = ({ product }) => {
       </figure>
       <div className="flex flex-col gap-2 ps-4 pb-8">
         <h2 className="text-xl font-semibold">{product_title}</h2>
-        <p className="text-lg text-gray-500 font-semibold">
-          price: <span>100</span>K
+        <p className="text-base text-gray-500 font-semibold">
+          Price: <span>{price}</span>K
         </p>
         <div className="mt-4">
           <Link to={`/product/${product_id}`}>
