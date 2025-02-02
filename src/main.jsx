@@ -7,6 +7,10 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
+import Laptops from "./components/Laptops/Laptops";
+import Phones from "./components/Phones/Phones";
+import SmartWatches from "./components/SmartWatches/SmartWatches";
+import Accessories from "./components/Accessories/Accessories";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +22,24 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: () => fetch("/products.json"),
+        children: [
+          {
+            path: "laptops",
+            element: <Laptops></Laptops>,
+          },
+          {
+            path: "phones",
+            element: <Phones></Phones>,
+          },
+          {
+            path: "smartwatches",
+            element: <SmartWatches></SmartWatches>,
+          },
+          {
+            path: "accessories",
+            element: <Accessories></Accessories>,
+          },
+        ],
       },
       {
         path: "product/:product_id",

@@ -3,7 +3,7 @@
     "product_id": "P001",
     "product_title": "Apple iPhone 15 Pro Max",
     "product_image": "https://via.placeholder.com/300x300?text=Apple+iPhone+15+Pro+Max",
-    "category": "Smartphones",
+    "category": "phone",
     "price": 1299.99,
     "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
     "specification": [
@@ -20,7 +20,7 @@
     "product_id": "P002",
     "product_title": "Samsung Galaxy S23 Ultra",
     "product_image": "https://via.placeholder.com/300x300?text=Samsung+Galaxy+S23+Ultra",
-    "category": "Smartphones",
+    "category": "phone",
     "price": 1199.99,
     "description": "The best of Samsung with a stunning display and a 200 MP camera.",
     "specification": [
@@ -37,7 +37,7 @@
     "product_id": "P003",
     "product_title": "Apple MacBook Air M2",
     "product_image": "https://via.placeholder.com/300x300?text=Apple+MacBook+Air+M2",
-    "category": "Laptops",
+    "category": "laptop",
     "price": 1199.99,
     "description": "Lightweight powerhouse with Apple's M2 chip.",
     "specification": [
@@ -54,7 +54,7 @@
     "product_id": "P004",
     "product_title": "Dell XPS 13 Plus",
     "product_image": "https://via.placeholder.com/300x300?text=Dell+XPS+13+Plus",
-    "category": "Laptops",
+    "category": "laptop",
     "price": 1499.99,
     "description": "Ultra-premium design with high-performance specs.",
     "specification": [
@@ -71,7 +71,7 @@
     "product_id": "P005",
     "product_title": "Sony WH-1000XM5",
     "product_image": "https://via.placeholder.com/300x300?text=Sony+WH-1000XM5",
-    "category": "Headphones",
+    "category": "accessory",
     "price": 399.99,
     "description": "Industry-leading noise cancellation headphones.",
     "specification": [
@@ -88,7 +88,7 @@
     "product_id": "P006",
     "product_title": "Apple Watch Series 8",
     "product_image": "https://via.placeholder.com/300x300?text=Apple+Watch+Series+8",
-    "category": "Smartwatches",
+    "category": "smartwatch",
     "price": 499.99,
     "description": "Track your health and stay connected.",
     "specification": [
@@ -105,7 +105,7 @@
     "product_id": "P007",
     "product_title": "ASUS ROG Strix G16",
     "product_image": "https://via.placeholder.com/300x300?text=ASUS+ROG+Strix+G16",
-    "category": "Laptops",
+    "category": "laptop",
     "price": 1799.99,
     "description": "A powerful gaming laptop built for performance.",
     "specification": [
@@ -122,7 +122,7 @@
     "product_id": "P008",
     "product_title": "Bose SoundLink Flex",
     "product_image": "https://via.placeholder.com/300x300?text=Bose+SoundLink+Flex",
-    "category": "Speakers",
+    "category": "accessory",
     "price": 149.99,
     "description": "Portable Bluetooth speaker with impressive sound quality.",
     "specification": [
@@ -138,7 +138,7 @@
     "product_id": "P009",
     "product_title": "Samsung Galaxy Tab S9",
     "product_image": "https://via.placeholder.com/300x300?text=Samsung+Galaxy+Tab+S9",
-    "category": "Tablets",
+    "category": "phone",
     "price": 899.99,
     "description": "High-performance Android tablet with stunning display.",
     "specification": [
@@ -155,7 +155,7 @@
     "product_id": "P010",
     "product_title": "Google Pixel 8 Pro",
     "product_image": "https://via.placeholder.com/300x300?text=Google+Pixel+8+Pro",
-    "category": "Smartphones",
+    "category": "phone",
     "price": 999.99,
     "description": "Flagship smartphone with exceptional camera quality.",
     "specification": [
@@ -172,7 +172,7 @@
     "product_id": "P011",
     "product_title": "Amazon Kindle Paperwhite",
     "product_image": "https://via.placeholder.com/300x300?text=Amazon+Kindle+Paperwhite",
-    "category": "E-Readers",
+    "category": "accessory",
     "price": 139.99,
     "description": "A lightweight e-reader with a glare-free display.",
     "specification": [
@@ -189,7 +189,7 @@
     "product_id": "P012",
     "product_title": "Fitbit Charge 5",
     "product_image": "https://via.placeholder.com/300x300?text=Fitbit+Charge+5",
-    "category": "Fitness Trackers",
+    "category": "accessory",
     "price": 179.99,
     "description": "Advanced fitness tracker with health insights.",
     "specification": [

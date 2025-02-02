@@ -1,11 +1,14 @@
-import { NavLink, useLoaderData } from "react-router-dom";
-import Product from "../Product/Product";
+import { NavLink, Outlet, useLoaderData, useLocation } from "react-router-dom";
 import Header from "../Header/Header";
+import Product from "../Product/Product";
 
 const Home = () => {
+  const navLinkStyles = ({ isActive }) => ({
+    backgroundColor: isActive ? "#9538E2" : "",
+    color: isActive ? "white" : "",
+  });
   const allProducts = useLoaderData();
-
-  console.log(allProducts);
+  const location = useLocation();
 
   return (
     <>
@@ -16,34 +19,47 @@ const Home = () => {
         </h2>
         <div className="flex gap-8">
           <div className="w-1/6 flex">
-            <div className="w-full bg-white flex flex-col gap-4 items-center py-8 h-fit">
-              <NavLink className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full">
+            <div className="w-full bg-white flex flex-col gap-4 items-center py-8 h-fit font-bold">
+              <NavLink
+                to="/"
+                style={navLinkStyles}
+                className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full"
+              >
                 All Products
               </NavLink>
-              <NavLink className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full">
+              <NavLink
+                to="/laptops"
+                style={navLinkStyles}
+                className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full"
+              >
                 Laptops
               </NavLink>
-              <NavLink className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full">
-                SmartWatches
-              </NavLink>
-              <NavLink className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full">
-                Accessories
-              </NavLink>
-              <NavLink className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full">
+              <NavLink
+                to="/phones"
+                className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full"
+              >
                 Phones
               </NavLink>
-              <NavLink className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full">
-                MacBook
+              <NavLink
+                to="/smartwatches"
+                className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full"
+              >
+                SmartWatches
               </NavLink>
-              <NavLink className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full">
-                Iphone
+              <NavLink
+                to="/accessories"
+                className="bg-[#09080F0D] py-2 ps-6 w-4/5 rounded-full"
+              >
+                Accessories
               </NavLink>
             </div>
           </div>
           <div className="5/6 grid lg:grid-cols-3 gap-8">
-            {allProducts.map((product) => (
-              <Product key={product.product_id} product={product}></Product>
-            ))}
+            {location.pathname === "/" &&
+              allProducts.map((product) => (
+                <Product key={product.product_id} product={product}></Product>
+              ))}
+            <Outlet></Outlet>
           </div>
         </div>
       </div>
