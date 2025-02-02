@@ -1,10 +1,15 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
+import { addToCartList } from "../../utility/localstorage";
 
 const ProductDetails = () => {
   const { product_id } = useParams();
   console.log(product_id);
+
+  const handleCart = (id) => {
+    addToCartList(id);
+  };
 
   //   const id = parseInt(product_id);
   const data = useLoaderData();
@@ -57,7 +62,10 @@ const ProductDetails = () => {
             <span className="font-bold">Rating:</span> <span>{rating}</span>
           </p>
           <div className="flex gap-4 items-center">
-            <button className="bg-[#9538E2] text-white px-4 py-1 rounded-full cursor-pointer flex gap-1 justify-center items-center">
+            <button
+              onClick={() => handleCart(product_id)}
+              className="bg-[#9538E2] text-white px-4 py-1 rounded-full cursor-pointer flex gap-1 justify-center items-center"
+            >
               <span className="text-base">Add to Cart</span>
               <IoCartOutline className="text-xl" />
             </button>
