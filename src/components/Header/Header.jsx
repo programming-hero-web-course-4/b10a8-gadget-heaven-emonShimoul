@@ -1,4 +1,3 @@
-import NavBar from "../NavBar/NavBar";
 import BannerImage from "../../assets/banner.jpg";
 
 const Header = () => {
