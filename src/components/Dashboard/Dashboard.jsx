@@ -26,10 +26,32 @@ const Dashboard = () => {
 
         <div className="w-2/3 mx-auto">
           <TabPanel>
-            <h2 className="text-2xl">Cart</h2>
+            <div className="flex justify-between items-center mt-10">
+              <h4 className="text-lg font-bold">Cart</h4>
+              <div className="flex gap-4 items-center">
+                <h4 className="text-lg font-bold">Total Cost: 1000</h4>
+                <button className="border border-[#9538E2] px-4 py-2 rounded-full text-[#9538E2] font-bold cursor-pointer">
+                  Sort by Price
+                </button>
+                <button className="px-6 py-2 rounded-full bg-[#9538E2] text-white cursor-pointer">
+                  Purchase
+                </button>
+              </div>
+            </div>
           </TabPanel>
           <TabPanel>
-            <h2 className="text-2xl">WishList</h2>
+            <div className="flex justify-between items-center mt-10">
+              <h4 className="text-lg font-bold">WishList</h4>
+              <div className="flex gap-4 items-center">
+                <h4 className="text-lg font-bold">Total Cost: 1000</h4>
+                <button className="border border-[#9538E2] px-4 py-2 rounded-full text-[#9538E2] font-bold cursor-pointer">
+                  Sort by Price
+                </button>
+                <button className="px-6 py-2 rounded-full bg-[#9538E2] text-white cursor-pointer">
+                  Purchase
+                </button>
+              </div>
+            </div>
           </TabPanel>
         </div>
       </Tabs>
