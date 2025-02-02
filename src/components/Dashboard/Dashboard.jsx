@@ -1,7 +1,24 @@
+import { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import { getCartList } from "../../utility/localstorage";
+import { useLoaderData } from "react-router-dom";
 
 const Dashboard = () => {
+  const allProducts = useLoaderData();
+  const [cartList, setCartList] = useState([]);
+
+  useEffect(() => {
+    const storedCartList = getCartList();
+    // console.log(storedCartList);
+
+    const cartProduct = allProducts.filter((product) =>
+      storedCartList.includes(product.product_id)
+    );
+    setCartList(cartProduct);
+    // console.log(cartList);
+  }, []);
+
   return (
     <div>
       <Tabs className="mb-12">
@@ -37,6 +54,13 @@ const Dashboard = () => {
                   Purchase
                 </button>
               </div>
+            </div>
+
+            <div className="mt-10">
+              <h3>Added to Cart: {cartList.length}</h3>
+              {cartList.map((item) => (
+                <h4 key={item.product_id}>{item.product_title}</h4>
+              ))}
             </div>
           </TabPanel>
           <TabPanel>

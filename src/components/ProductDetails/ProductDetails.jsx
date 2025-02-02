@@ -5,7 +5,7 @@ import { addToCartList } from "../../utility/localstorage";
 
 const ProductDetails = () => {
   const { product_id } = useParams();
-  console.log(product_id);
+  // console.log(product_id);
 
   const handleCart = (id) => {
     addToCartList(id);
@@ -14,7 +14,7 @@ const ProductDetails = () => {
   //   const id = parseInt(product_id);
   const data = useLoaderData();
   const product = data.find((product) => product.product_id === product_id);
-  console.log(product);
+  // console.log(product);
 
   const {
     product_title,
