@@ -7,8 +7,8 @@ const Product = ({ product }) => {
     <div className="card bg-base-100 shadow-xl">
       <figure className="px-6 pt-6 pb-4">
         <img
-          className=" rounded-lg"
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          className=" rounded-lg w-[282px] h-[182px]"
+          src={product_image}
           alt="Shoes"
         />
       </figure>

@@ -2,7 +2,7 @@
   {
     "product_id": "P001",
     "product_title": "Apple iPhone 15 Pro Max",
-    "product_image": "https://via.placeholder.com/300x300?text=Apple+iPhone+15+Pro+Max",
+    "product_image": "https://i.ibb.co.com/FkgkWVdz/006.webp",
     "category": "phone",
     "price": 1299.99,
     "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
@@ -19,7 +19,7 @@
   {
     "product_id": "P002",
     "product_title": "Samsung Galaxy S23 Ultra",
-    "product_image": "https://via.placeholder.com/300x300?text=Samsung+Galaxy+S23+Ultra",
+    "product_image": "https://i.ibb.co.com/tTKbZG58/007.jpg",
     "category": "phone",
     "price": 1199.99,
     "description": "The best of Samsung with a stunning display and a 200 MP camera.",
@@ -36,7 +36,7 @@
   {
     "product_id": "P003",
     "product_title": "Apple MacBook Air M2",
-    "product_image": "https://via.placeholder.com/300x300?text=Apple+MacBook+Air+M2",
+    "product_image": "https://i.ibb.co.com/dww6QKhz/002.jpg",
     "category": "laptop",
     "price": 1199.99,
     "description": "Lightweight powerhouse with Apple's M2 chip.",
@@ -53,7 +53,7 @@
   {
     "product_id": "P004",
     "product_title": "Dell XPS 13 Plus",
-    "product_image": "https://via.placeholder.com/300x300?text=Dell+XPS+13+Plus",
+    "product_image": "https://i.ibb.co.com/21ZnrWMC/001.jpg",
     "category": "laptop",
     "price": 1499.99,
     "description": "Ultra-premium design with high-performance specs.",
@@ -70,7 +70,7 @@
   {
     "product_id": "P005",
     "product_title": "Sony WH-1000XM5",
-    "product_image": "https://via.placeholder.com/300x300?text=Sony+WH-1000XM5",
+    "product_image": "https://i.ibb.co.com/v6xmJDPd/headphone1.jpg",
     "category": "accessory",
     "price": 399.99,
     "description": "Industry-leading noise cancellation headphones.",
@@ -87,7 +87,7 @@
   {
     "product_id": "P006",
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://via.placeholder.com/300x300?text=Apple+Watch+Series+8",
+    "product_image": "https://i.ibb.co.com/21nXzCYG/smartwatch.jpg",
     "category": "smartwatch",
     "price": 499.99,
     "description": "Track your health and stay connected.",
@@ -104,7 +104,7 @@
   {
     "product_id": "P007",
     "product_title": "ASUS ROG Strix G16",
-    "product_image": "https://via.placeholder.com/300x300?text=ASUS+ROG+Strix+G16",
+    "product_image": "https://i.ibb.co.com/rRkZ3Chm/e-reader.jpg",
     "category": "laptop",
     "price": 1799.99,
     "description": "A powerful gaming laptop built for performance.",
@@ -121,7 +121,7 @@
   {
     "product_id": "P008",
     "product_title": "Bose SoundLink Flex",
-    "product_image": "https://via.placeholder.com/300x300?text=Bose+SoundLink+Flex",
+    "product_image": "https://i.ibb.co.com/jZf6kMGh/speaker.webp",
     "category": "accessory",
     "price": 149.99,
     "description": "Portable Bluetooth speaker with impressive sound quality.",
@@ -136,11 +136,11 @@
   },
   {
     "product_id": "P009",
-    "product_title": "Samsung Galaxy Tab S9",
-    "product_image": "https://via.placeholder.com/300x300?text=Samsung+Galaxy+Tab+S9",
-    "category": "phone",
+    "product_title": "HP EliteBook",
+    "product_image": "https://i.ibb.co.com/dww6QKhz/002.jpg",
+    "category": "laptop",
     "price": 899.99,
-    "description": "High-performance Android tablet with stunning display.",
+    "description": "High-performance laptop with stunning display.",
     "specification": [
       "11-inch Dynamic AMOLED 2X display",
       "Snapdragon 8 Gen 2",
@@ -153,8 +153,8 @@
   },
   {
     "product_id": "P010",
-    "product_title": "Google Pixel 8 Pro",
-    "product_image": "https://via.placeholder.com/300x300?text=Google+Pixel+8+Pro",
+    "product_title": "Apple iPhone 13",
+    "product_image": "https://i.ibb.co.com/GfcRFdJB/008.webp",
     "category": "phone",
     "price": 999.99,
     "description": "Flagship smartphone with exceptional camera quality.",
@@ -170,11 +170,11 @@
   },
   {
     "product_id": "P011",
-    "product_title": "Amazon Kindle Paperwhite",
-    "product_image": "https://via.placeholder.com/300x300?text=Amazon+Kindle+Paperwhite",
-    "category": "accessory",
+    "product_title": "Lenovo Thinkpad",
+    "product_image": "https://i.ibb.co.com/21ZnrWMC/001.jpg",
+    "category": "laptop",
     "price": 139.99,
-    "description": "A lightweight e-reader with a glare-free display.",
+    "description": "A lightweight laptop with a glare-free display.",
     "specification": [
       "6.8-inch glare-free display",
       "Adjustable warm light",
@@ -188,8 +188,8 @@
   {
     "product_id": "P012",
     "product_title": "Fitbit Charge 5",
-    "product_image": "https://via.placeholder.com/300x300?text=Fitbit+Charge+5",
-    "category": "accessory",
+    "product_image": "https://i.ibb.co.com/ycnLfcWK/smartwatch2.webp",
+    "category": "smartwatch",
     "price": 179.99,
     "description": "Advanced fitness tracker with health insights.",
     "specification": [

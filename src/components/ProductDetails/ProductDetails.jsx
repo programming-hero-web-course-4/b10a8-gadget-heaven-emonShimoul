@@ -48,8 +48,8 @@ const ProductDetails = () => {
 
       <div className="hero-content flex-col lg:flex-row gap-12 mt-10 bg-white w-2/3 mx-auto rounded-2xl py-6 absolute top-75 left-60">
         <img
-          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-          className="max-w-sm rounded-lg shadow-2xl"
+          src={product_image}
+          className="max-w-sm rounded-lg shadow-2xl w-[300px] h-[400px]"
         />
         <div className="flex flex-col gap-4">
           <h3 className="text-3xl font-bold"> {product_title}</h3>
