@@ -17,7 +17,7 @@ const Dashboard = () => {
       storedCartList.includes(product.product_id)
     );
     setCartList(cartProduct);
-    // console.log(cartList);
+    console.log(cartList);
   }, []);
 
   useEffect(() => {
@@ -77,10 +77,34 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className="mt-10">
-              <h3>Added to Cart: {cartList.length}</h3>
+            <div className="mt-10 flex flex-col gap-4">
               {cartList.map((item) => (
-                <h4 key={item.product_id}>{item.product_title}</h4>
+                <div
+                  key={item.product_id}
+                  className="flex justify-between bg-white p-4 rounded-xl"
+                >
+                  <div className="flex gap-6">
+                    <img
+                      src={item.product_image}
+                      className="w-[200px] h-[124px] rounded-xl"
+                      alt=""
+                    />
+                    <div className="flex flex-col gap-2">
+                      <h4 className="font-bold text-xl">
+                        {item.product_title}
+                      </h4>
+                      <p className="text-lg text-gray-500">
+                        {item.description}
+                      </p>
+                      <p className="text-md font-semibold">
+                        Price: {item.price}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="border p-1 text-red-500 w-[25px] h-[25px] rounded-full flex justify-center items-center cursor-pointer">
+                    <span>X</span>
+                  </div>
+                </div>
               ))}
             </div>
           </TabPanel>
@@ -89,10 +113,40 @@ const Dashboard = () => {
               <h4 className="text-lg font-bold">WishList</h4>
             </div>
 
-            <div className="mt-10">
-              <h3>Added to Wishlist: {wishList.length}</h3>
+            <div className="mt-10 flex flex-col gap-4">
               {wishList.map((item) => (
-                <h4 key={item.product_id}>{item.product_title}</h4>
+                <div
+                  key={item.product_id}
+                  className="flex justify-between bg-white p-4 rounded-xl"
+                >
+                  <div className="flex gap-6">
+                    <img
+                      src={item.product_image}
+                      className="w-[200px] h-[124px] rounded-xl"
+                      alt=""
+                    />
+                    <div className="flex flex-col gap-2">
+                      <h4 className="font-bold text-lg">
+                        {item.product_title}
+                      </h4>
+                      <p className="text-sm text-gray-500">
+                        <span className="font-bold">Description: </span>{" "}
+                        {item.description}
+                      </p>
+                      <p className="text-md font-semibold">
+                        Price: {item.price}
+                      </p>
+                      <div>
+                        <button className="px-4 py-1 rounded-full bg-[#9538E2] text-white text-sm cursor-pointer">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="border p-1 text-red-500 w-[25px] h-[25px] rounded-full flex justify-center items-center cursor-pointer">
+                    <span>X</span>
+                  </div>
+                </div>
               ))}
             </div>
           </TabPanel>

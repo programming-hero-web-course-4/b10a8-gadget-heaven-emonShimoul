@@ -46,7 +46,7 @@ const ProductDetails = () => {
         </p>
       </div>
 
-      <div className="hero-content flex-col lg:flex-row gap-12 mt-10 bg-white w-2/3 mx-auto rounded-2xl py-6 absolute top-75 left-60">
+      <div className="hero-content flex-col lg:flex-row gap-12 mt-10 bg-white w-2/3 mx-auto rounded-2xl py-6 absolute top-60 left-50">
         <img
           src={product_image}
           className="max-w-sm rounded-lg shadow-2xl w-[300px] h-[400px]"
