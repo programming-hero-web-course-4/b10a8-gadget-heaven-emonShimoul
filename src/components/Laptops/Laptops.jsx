@@ -3,12 +3,10 @@ import Product from "../Product/Product";
 
 const Laptops = () => {
   const allProducts = useLoaderData();
-  // console.log(allProducts);
 
   const laptops = allProducts.filter(
     (product) => product.category === "laptop"
   );
-  // console.log(laptops);
 
   return (
     <>

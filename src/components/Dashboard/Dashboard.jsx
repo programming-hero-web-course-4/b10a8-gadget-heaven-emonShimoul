@@ -12,13 +12,11 @@ const Dashboard = () => {
 
   useEffect(() => {
     const storedCartList = getCartList();
-    // console.log(storedCartList);
 
     const cartProduct = allProducts.filter((product) =>
       storedCartList.includes(product.product_id)
     );
     setCartList(cartProduct);
-    console.log(cartList);
 
     // Calculate total price
     const total = cartProduct.reduce(
@@ -30,13 +28,11 @@ const Dashboard = () => {
 
   useEffect(() => {
     const storedWishList = getStoredWishList();
-    // console.log(storedCartList);
 
     const wishlistProduct = allProducts.filter((product) =>
       storedWishList.includes(product.product_id)
     );
     setWishList(wishlistProduct);
-    // console.log(cartList);
   }, []);
 
   // sorting by price
