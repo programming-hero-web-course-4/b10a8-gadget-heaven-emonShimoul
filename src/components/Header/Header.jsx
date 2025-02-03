@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BannerImage from "../../assets/banner.jpg";
 
 const Header = () => {
@@ -14,9 +15,11 @@ const Header = () => {
             it all!
           </p>
           <div>
-            <button className="bg-white text-[#9538E2] font-bold py-2 px-6 rounded-4xl cursor-pointer">
-              Shop Now
-            </button>
+            <Link to="/dashboard">
+              <button className="bg-white text-[#9538E2] font-bold py-2 px-6 rounded-4xl cursor-pointer">
+                Shop Now
+              </button>
+            </Link>
           </div>
         </div>
         <div className="max-w-[1065px] absolute top-90 left-40">

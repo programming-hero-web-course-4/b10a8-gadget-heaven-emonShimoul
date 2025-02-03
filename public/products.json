@@ -201,5 +201,22 @@
     ],
     "availability": true,
     "rating": 4.5
+  },
+  {
+    "product_id": "P013",
+    "product_title": "Microsoft Surface Pro 9",
+    "product_image": "https://i.ibb.co.com/dww6QKhz/002.jpg",
+    "category": "laptop",
+    "price": 299.99,
+    "description": "It has a huge 8GB LPDDR4x memory and a spacious 256GB SSD storage.",
+    "specification": [
+      "PixelSense Flow MultiTouch Display",
+      "10 point multi-touch",
+      "2880 X 1920 (267 PPI)",
+      "Up to 120Hz refresh rate",
+      "sRGB and Vivid Refresh rate up to 120Hz"
+    ],
+    "availability": true,
+    "rating": 4.8
   }
 ]
