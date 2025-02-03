@@ -11,8 +11,8 @@ import Laptops from "./components/Laptops/Laptops";
 import Phones from "./components/Phones/Phones";
 import SmartWatches from "./components/SmartWatches/SmartWatches";
 import Accessories from "./components/Accessories/Accessories";
-import Statistics from "./components/Statistics/Statistics";
 import { ToastContainer } from "react-toastify";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -58,8 +58,8 @@ const router = createBrowserRouter([
         loader: () => fetch("/products.json"),
       },
       {
-        path: "statistics",
-        element: <Statistics></Statistics>,
+        path: "contactus",
+        element: <ContactUs></ContactUs>,
       },
     ],
   },

@@ -19,13 +19,13 @@ const NavBar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/statistics" style={navLinkStyles}>
-          Statistics
+        <NavLink to="/dashboard" style={navLinkStyles}>
+          Dashboard
         </NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard" style={navLinkStyles}>
-          Dashboard
+        <NavLink to="/contactus" style={navLinkStyles}>
+          Contact Us
         </NavLink>
       </li>
     </>
