@@ -5,17 +5,28 @@ import { FaRegHeart } from "react-icons/fa";
 const NavBar = () => {
   const location = useLocation();
 
+  const navLinkStyles = ({ isActive }) => ({
+    backgroundColor: isActive ? "#7b27c0" : "",
+    color: isActive ? "white" : "",
+  });
+
   const isHomePage = location.pathname === "/";
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/" style={navLinkStyles}>
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/statistics">Statistics</NavLink>
+        <NavLink to="/statistics" style={navLinkStyles}>
+          Statistics
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink to="/dashboard" style={navLinkStyles}>
+          Dashboard
+        </NavLink>
       </li>
     </>
   );
