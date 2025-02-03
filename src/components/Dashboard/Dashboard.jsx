@@ -8,6 +8,7 @@ const Dashboard = () => {
   const allProducts = useLoaderData();
   const [cartList, setCartList] = useState([]);
   const [wishList, setWishList] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     const storedCartList = getCartList();
@@ -18,6 +19,13 @@ const Dashboard = () => {
     );
     setCartList(cartProduct);
     console.log(cartList);
+
+    // Calculate total price
+    const total = cartProduct.reduce(
+      (sum, product) => sum + parseFloat(product.price),
+      0
+    );
+    setTotalPrice(parseFloat(total.toFixed(2)));
   }, []);
 
   useEffect(() => {
@@ -64,7 +72,7 @@ const Dashboard = () => {
             <div className="flex justify-between items-center mt-10">
               <h4 className="text-lg font-bold">Cart</h4>
               <div className="flex gap-4 items-center">
-                <h4 className="text-lg font-bold">Total Cost: 1000</h4>
+                <h4 className="text-lg font-bold">Total Cost: {totalPrice}</h4>
                 <button
                   onClick={handleSort}
                   className="border border-[#9538E2] px-4 py-2 rounded-full text-[#9538E2] font-bold cursor-pointer"
