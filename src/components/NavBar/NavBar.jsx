@@ -1,8 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
 const NavBar = () => {
+  const location = useLocation();
+
+  const isHomePage = location.pathname === "/";
   const links = (
     <>
       <li>
@@ -17,7 +20,7 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className=" text-white rounded-2xl">
+    <div className={`rounded-2xl ${isHomePage ? "text-white" : "text-black"}`}>
       <div className="navbar mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -50,8 +53,8 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end flex gap-4">
-          <IoCartOutline className="text-4xl bg-white text-black p-2 rounded-4xl cursor-pointer" />
-          <FaRegHeart className="text-4xl bg-white text-black p-2 rounded-4xl cursor-pointer" />
+          <IoCartOutline className="text-4xl bg-white text-black p-2 rounded-4xl cursor-pointer border border-gray-300" />
+          <FaRegHeart className="text-4xl bg-white text-black p-2 rounded-4xl cursor-pointer border border-gray-300" />
         </div>
       </div>
     </div>

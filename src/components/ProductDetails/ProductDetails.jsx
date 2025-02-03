@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { addToCartList, addToStoredWishList } from "../../utility/localstorage";
@@ -7,12 +8,17 @@ const ProductDetails = () => {
   const { product_id } = useParams();
   // console.log(product_id);
 
+  const [disabled, setDisabled] = useState(false);
+
   const handleCart = (id) => {
     addToCartList(id);
   };
 
   const handleWishlist = (id) => {
-    addToStoredWishList(id);
+    if (!disabled) {
+      addToStoredWishList(id);
+      setDisabled(true);
+    }
   };
 
   //   const id = parseInt(product_id);
@@ -75,7 +81,9 @@ const ProductDetails = () => {
             </button>
             <div
               onClick={() => handleWishlist(product_id)}
-              className="border p-2 rounded-full text-gray-500 cursor-pointer"
+              className={`border p-2 rounded-full cursor-pointer ${
+                disabled ? "text-gray-300 pointer-events-none" : "text-gray-500"
+              }`}
             >
               <FaRegHeart />
             </div>
